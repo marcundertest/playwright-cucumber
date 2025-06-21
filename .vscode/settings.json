@@ -1,0 +1,7 @@
+{
+  "cucumber.features": ["tests/features/**/*.feature"],
+  "cucumber.glue": ["tests/steps/**/*.ts", "tests/support/**/*.ts"],
+  "cucumber.stepDefinitions": "tests/steps/**/*.ts",
+  "cucumber.strictStepDefinitions": false,
+  "cucumber.stepRegexp": "^(?:given|when|then|and|but|step)\\(\\s*(?:['\"]([^']*?)['\"]|\\/([^\\/].*?)\\/\\w*)\\s*"
+}

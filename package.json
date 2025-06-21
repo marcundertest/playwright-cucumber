@@ -1,0 +1,23 @@
+{
+  "name": "playwright-cucumber",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "e2e": "cucumber-js --require-module ts-node/register --require tests/support/world.ts --require tests/steps/**/*.ts",
+    "test": "cucumber-js --require-module ts-node/register --require tests/support/world.ts --require tests/steps/**/*.ts",
+    "test:watch": "cucumber-js --require-module ts-node/register --require tests/support/world.ts --require tests/steps/**/*.ts --watch",
+    "test:debug": "cucumber-js --require-module ts-node/register --require tests/support/world.ts --require tests/steps/**/*.ts --debug",
+    "test:debug:watch": "cucumber-js --require-module ts-node/register --require tests/support/world.ts --require tests/steps/**/*.ts --debug --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.53.1",
+    "@types/node": "^24.0.3",
+    "dotenv": "^16.5.0",
+    "ts-node": "^10.9.2"
+  }
+}

@@ -1,0 +1,34 @@
+E:\Develop\repos\develop\playwright-cucumber\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: Ô¿» Unable to compile TypeScript:
+tests/support/world.ts(37,22): error TS2339: Property 'connect' does not exist on type '{ chromium: BrowserType<{}>; firefox: BrowserType<{}>; webkit: BrowserType<{}>; }'.
+tests/support/world.ts(37,22): error TS2339: Property 'connectOverCDP' does not exist on type '{ chromium: BrowserType<{}>; firefox: BrowserType<{}>; webkit: BrowserType<{}>; }'.
+tests/support/world.ts(37,22): error TS2339: Property 'executablePath' does not exist on type '{ chromium: BrowserType<{}>; firefox: BrowserType<{}>; webkit: BrowserType<{}>; }'.
+tests/support/world.ts(37,22): error TS2339: Property 'launch' does not exist on type '{ chromium: BrowserType<{}>; firefox: BrowserType<{}>; webkit: BrowserType<{}>; }'.
+tests/support/world.ts(37,22): error TS2339: Property 'launchPersistentContext' does not exist on type '{ chromium: BrowserType<{}>; firefox: BrowserType<{}>; webkit: BrowserType<{}>; }'.
+tests/support/world.ts(37,22): error TS2339: Property 'launchServer' does not exist on type '{ chromium: BrowserType<{}>; firefox: BrowserType<{}>; webkit: BrowserType<{}>; }'.
+tests/support/world.ts(37,22): error TS2339: Property 'name' does not exist on type '{ chromium: BrowserType<{}>; firefox: BrowserType<{}>; webkit: BrowserType<{}>; }'.
+tests/support/world.ts(40,26): error TS18048: 'launcher' is possibly 'undefined'.
+tests/support/world.ts(62,10): error TS2352: Conversion of type 'IWorld<any>' to type 'PlaywrightWorld' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'IWorld<any>' is missing the following properties from type 'PlaywrightWorld': browser, context, page, launchBrowser, and 2 more.
+tests/support/world.ts(66,10): error TS2352: Conversion of type 'IWorld<any>' to type 'PlaywrightWorld' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'IWorld<any>' is missing the following properties from type 'PlaywrightWorld': browser, context, page, launchBrowser, and 2 more.
+
+    at createTSError (E:\Develop\repos\develop\playwright-cucumber\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (E:\Develop\repos\develop\playwright-cucumber\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (E:\Develop\repos\develop\playwright-cucumber\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (E:\Develop\repos\develop\playwright-cucumber\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (E:\Develop\repos\develop\playwright-cucumber\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1689:10
+    at Object.require.extensions.<computed> [as .ts] (E:\Develop\repos\develop\playwright-cucumber\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14) {
+  diagnosticCodes: [
+    2339,  2339, 2339,
+    2339,  2339, 2339,
+    2339, 18048, 2352,
+    2352
+  ]
+}
